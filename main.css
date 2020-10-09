@@ -8,60 +8,66 @@ colors:
 Nunito
 
 **/
-body{
+body {
     font-family: 'Nunito', sans-serif;
     background: #F2F2F2;
 }
-.row{
-   max-width: 114rem;
-   margin: 0 auto 0 auto;
-  
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto 0 auto;
+
 }
 
-.clear-fix::after,.clearfix::before{
+.clear-fix::after,
+.clearfix::before {
     clear: both;
     content: "";
     display: block;
 }
-.row-2{
-   max-width: 772px;
-   margin: 0 auto 0 auto;
-  
+
+.row-2 {
+    max-width: 772px;
+    margin: 0 auto 0 auto;
+
 }
-[class^="col-"]::after{
+
+[class^="col-"]::after {
     clear: both;
     content: "";
 }
 
-.col-1-of-3{
+.col-1-of-3 {
     float: left;
     width: calc(100%/3);
 }
-.col-1-of-3 .carousel-img{
+
+.col-1-of-3 .carousel-img {
     width: 350px;
     min-height: 432px;
 }
 
-.col-2-of-3{
+.col-2-of-3 {
     float: left;
     width: calc(2*(100%/3) - 2*20px);
-   
-   
+
+
 }
 
-.col-1-of-4{
+.col-1-of-4 {
     float: left;
     width: calc(100%/4 - 6*20px);
-    
+
     margin-right: 20px;
 
 }
-.col-1-of-4:last-child{
-   margin-right: 0px;
-  
+
+.col-1-of-4:last-child {
+    margin-right: 0px;
+
 }
 
-.features{
+.features {
     position: relative;
     padding: 40px;
     background: #ffffff;
@@ -70,125 +76,135 @@ body{
 }
 
 
-.svg-icon-lg{
+.svg-icon-lg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     width: 20px;
     scale: 0.2;
     fill: red;
     transition: all 0.5s;
 }
+
 .cls-1 {
     fill: #63c76a;
     fill-rule: evenodd;
     transition: all 0.5s;
-  }
+}
 
-  .features:hover {
+.features:hover {
     padding: 40px;
-    background:  #63c76a;
+    background: #63c76a;
     text-align: center;
     color: #F2F2F2;
 }
 
-.features:hover .cls-1{
+.features:hover .cls-1 {
     fill: #ffffff;
     z-index: 1000;
 }
 
-.features:hover .svg-icon-lg{
+.features:hover .svg-icon-lg {
     opacity: 1;
     scale: 1;
     z-index: 1000;
     width: 100px;
-   
-   
+
+
 }
 
-.features:hover .svg-icon-lg path{
-   background: red;
+.features:hover .svg-icon-lg path {
+    background: red;
 }
-.features-content{
-    z-index:1001 ;
+
+.features-content {
+    z-index: 1001;
 }
-.primary-heding-text{
+
+.primary-heding-text {
     text-align: left;
-    padding:20px 45px;
+    padding: 20px 45px;
     font-weight: 900;
 }
 
-.card{
-    background:#ffff;
+.card {
+    background: #ffff;
     min-height: 432px;
 }
-.carousel-text-box{
+
+.carousel-text-box {
     display: inline-block;
-    min-width:343px;
+    min-width: 343px;
     max-height: 112px;
     padding: 10px 40px;
-   
-   
+
+
 }
-.carousel-text-heading{
+
+.carousel-text-heading {
     display: inline-block;
     width: 50px;
     margin-right: 20px;
     vertical-align: top;
     font-weight: bold;
 }
-.carousel-text{
+
+.carousel-text {
     display: inline-block;
     width: 265px;
 
 }
-.carousel-text-right{
+
+.carousel-text-right {
     text-align: left;
     font-size: 16px;
     display: table-cell;
-    
-  
+
+
 }
-.carousel-text-left{
+
+.carousel-text-left {
     text-align: right;
-   font-size: 16px;
-   column-count: 2;   
-   font-weight: bold;
-   display: table-cell;
-   padding-left: 30px;
+    font-size: 16px;
+    column-count: 2;
+    font-weight: bold;
+    display: table-cell;
+    padding-left: 30px;
 }
 
 
-.result{
+.result {
     background: #63c76a;
     margin: 20px 25px;
     border-radius: 2px;
-    color:#ffff;
+    color: #ffff;
     display: table;
-   
+
 }
 
-.result-text-heading{
-    color:white;
+.result-text-heading {
+    color: white;
     display: table-cell;
     float: left;
-    margin-right:20px ;
+    margin-right: 20px;
 }
-.result-text-pera{
-    color:white;
+
+.result-text-pera {
+    color: white;
     display: table-cell;
 }
 
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: -23px !important; 
+    margin-top: -23px !important;
     z-index: 1000000;
     position: relative;
     right: 8%;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #63C669 !important;
 }
