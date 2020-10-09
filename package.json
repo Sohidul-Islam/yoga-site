@@ -1,0 +1,15 @@
+{
+  "name": "yoga-site",
+  "version": "1.0.0",
+  "description": "yoga site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yoga-site"
+  },
+  "author": "Sohidul-Islam",
+  "license": "ISC"
+}
