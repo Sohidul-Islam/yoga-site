@@ -8,6 +8,8 @@ colors:
 Nunito
 
 **/
+
+/* ************************ for Carousel ************************* */
 body {
     font-family: 'Nunito', sans-serif;
     background: #F2F2F2;
@@ -52,75 +54,6 @@ body {
     width: calc(2*(100%/3) - 2*20px);
 
 
-}
-
-.col-1-of-4 {
-    float: left;
-    width: calc(100%/4 - 6*20px);
-
-    margin-right: 20px;
-
-}
-
-.col-1-of-4:last-child {
-    margin-right: 0px;
-
-}
-
-.features {
-    position: relative;
-    padding: 40px;
-    background: #ffffff;
-    text-align: center;
-    transition: all 0.5s;
-}
-
-
-.svg-icon-lg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    width: 20px;
-    scale: 0.2;
-    fill: red;
-    transition: all 0.5s;
-}
-
-.cls-1 {
-    fill: #63c76a;
-    fill-rule: evenodd;
-    transition: all 0.5s;
-}
-
-.features:hover {
-    padding: 40px;
-    background: #63c76a;
-    text-align: center;
-    color: #F2F2F2;
-}
-
-.features:hover .cls-1 {
-    fill: #ffffff;
-    z-index: 1000;
-}
-
-.features:hover .svg-icon-lg {
-    opacity: 1;
-    scale: 1;
-    z-index: 1000;
-    width: 100px;
-
-
-}
-
-.features:hover .svg-icon-lg path {
-    background: red;
-}
-
-.features-content {
-    z-index: 1001;
 }
 
 .primary-heding-text {
@@ -207,4 +140,97 @@ body {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #63C669 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ************************ for Features ************************* */
+.features-row{
+    max-width: 114rem;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+[class^="col-"]::after {
+    clear: both;
+    content: "";
+}
+
+.features-col {
+    float: left;
+    width: calc(100%/4 - 6*20px);
+
+    margin-right: 20px;
+
+}
+
+.features-col:last-child {
+    margin-right: 0px;
+
+}
+
+
+.cls-1 {
+    fill: #63c76a;
+    fill-rule: evenodd;
+    transition: all 0.5s;
+}
+
+.features:hover {
+    background: #63c76a;
+    text-align: center;
+    color: #F2F2F2;
+    transition: all 0.5s;
+}
+
+.features:hover .cls-1 {
+    fill: #ffffff;
+}
+
+.features-content {
+    z-index: 1001;
+    position: relative;
+
+}
+
+.features {
+    position: relative;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.svg-icon-lg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+
+}
+
+.svg-icon-lg {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.features:hover .svg-icon-lg {
+    transform: scale(4);
+    overflow: hidden;
+    opacity: 1;
 }
